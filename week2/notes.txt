@@ -1,0 +1,125 @@
+Week 2 Lecture notes
+------------------------------------------------------------------
+Coding Standards
+
+1. Always use a text editor
+
+2. Indent your code
+	- 4 spaces
+	- 8 spaces is better sometimes
+
+3. Limit the width of your code (80 columns?)
+
+4. Limit the length of individual functions
+
+
+- Use 8 space indent + 80 column margin helps code redability as 2 dimention of loops is the max to think about before code gets too messy.
+
+------------------------------------------------------------------
+
+Markdown
+
+- Simply text to HTML conversion tool for web writers, write with easy-to-read plain text format that converts it structurally to valid XHTML or HTML
+
+* Italics
+* Bold
+* Headings
+* Unordered Lists
+* Ordered Lists
+* Links
+
+------------------------------------------------------------------
+
+knitr - Literate Statistical Programing
+
+Concept
+- Authors must consider how to put data on the web
+- Where to download
+- Must interact with websites
+
+Idea
+- Don Knuth
+- Idea to document and run code on the same document
+- Stream of text and code
+- Presentation code formats the code and readable text
+- Anaylsis code divided into chunks of code to be described
+
+Sweave orginally used LATex
+knitr uses R markdown
+
+How does my work reproducible
+- Decide to do it from begineing
+- Version control
+- Software operations which can be coded
+- Doesn't store/save output
+- data is save in non-proprietary formats
+
+Pros
+- Text and code all together
+- Logical order
+- Data, results are automatically updated
+- Code is live -- automatic "regression test"
+
+Cons
+- Text and code all in one place, alot of code
+- Slow to build if too big as it has to be rebuilt again
+
+What is knitr
+- R package
+- on CRAN
+- export to PDF, HTML
+- supports RMarkdown, LaTeX and HTML
+- Built right into RStudio
+- use Markdown here
+
+Markdown
+- Simplified version of "Markup" languages
+- No special editor required
+
+Knitr good for?
+- Manuals
+- Short/Technical Documents
+- Tutorials
+- Reports
+- Data preprocessing documents/summaries
+
+Not good for?
+- Very long research articles
+- Complex time-consuming computations
+- Documents that require precise formatting
+
+Notes:
+- Knitr fills with filler text
+
+------------------------------------------------------------------
+
+knitr Document processing
+- write in RMarkdown document
+- knitr produces .md and .html by default
+- changes to .md and .html will be overwriten in next processing
+- Results can be hidden on document.
+- echo=FALSE, code chunk is hidden
+- result=FALSE, results from code is hidden
+- possible to hide code but only echo computed results or variables.
+
+Generating Images/Graphics
+- Make plots and set plot margins, etc
+- Control others (e.g. fig.height=4)
+
+Make a Table (xtable package), print table
+- 	fit -> variable
+-	library(xtable)
+-	xt <- xtable(sumary(fit))
+-	print(xt, type="html")
+
+Global options
+- e.g {r setoptions, echo=false}
+- opts_chunk$set(echo = FALSE, results = "hide")
+- 
+
+Cache-ing code chunks
+- Each code chunk can have setting {cache=TRUE}
+- Will load from disk the result, wont process again.
+- If data or code changes and have dependencies over each other -> MUST re-run code.
+- Chucks of significant side effects may not be cacheable.
+

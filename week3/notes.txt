@@ -1,0 +1,113 @@
+Reproducible Research Checklist (part 1)
+
+Don'ts: DO things by Hand:
+
+*  Editing spreadsheets of data to "clean things up"
+	- remove outliers
+	- QA/QC
+	- Validating
+
+* Editing Tables or figures
+
+* Downloading data from websites (clicking links)
+	- clicking websites, should use URLs and document carefully
+
+* Moving files around by hand
+
+* "We are just gonna do it once...."
+
+Everything should be precisely documented if done "by hand", instead should be done via automated scripts.
+
+----------------------------------------------------------------
+
+Don't: Point And Click
+
+- Data processing / statistical analysis package have GUIs
+
+- GUIs are convenient / intuitive but actions you take with GUI are difficult to reproduce
+
+- GUIs produce log file or script equalivant commands, saved later for examination
+
+- Be careful of analysis software that is highly interactive
+
+----------------------------------------------------------------
+
+DO: Teach a Computer to do it
+
+- Give computer instructions, write down exactly what needs to be done and how it should be done.
+
+- Teaching computer guarantees reproducibility
+
+-> Thus information such as "download by clicking on link" is too lengthy.
+-> list of instructions are lengthy
+-> e.g. download.file() function
+
+----------------------------------------------------------------
+
+DO: Use Some Version Control System
+- Slows me down to keep track of things
+- Think about changes made
+- Move along step by step
+
+----------------------------------------------------------------
+
+DO: Keep Track of Software Environment
+- Keep track of Hardware/Software environment
+
+-> Computer Architecture: CPU, Chip, bit-size, etc
+
+-> OS: Windows, OSX, Linux
+
+-> Software toolchain: Compilers, interpreters, command shell
+
+-> Supporting software / infrastructure: Libraries, R packages, software repos
+
+-> External dependencies: Web sites, data, remote DBs, Software repos
+
+-> Version Numers: Ideally for everyone
+
+----------------------------------------------------------------
+
+TIP USE R Command: sessionInfo()
+
+----------------------------------------------------------------
+
+Don't: Save Output
+
+- Avoid saving data of analytics output
+- Better to save the code and data that generated it
+- stray output file cannot be easily connected with the means it was created
+	- e.g. different hardware, etc
+- Intermediate files are okay if clear documentation is created on how it was produced
+
+----------------------------------------------------------------
+
+DO: Set your seed
+- Random number generator is always based on initial seed
+- Use set.seed(int) to set seed to specific random point in generator
+- Always do it when dealing with random output
+
+----------------------------------------------------------------
+
+DO: Think about entire Pipeline
+- Usually very long pipeline
+- Raw data -> processed data -> analysis -> reports
+- How the end is made is just as important as the end itself
+- More of the data analysis pipeline that is made reproducible, the better for everyone
+
+----------------------------------------------------------------
+
+Summary; FINAL CHECKLIST
+- Are we doing good science?
+- Was any part of the analysis done by hand?
+	-> Precisely documented?
+	-> Does documentation match reality?
+- Taught the computer as much to do?
+- Version Control system (GIT, SVN)
+- Documented software enviroment? System.info() output stored & saved
+- Have we saved any output we cannot reconstruct from original data + code? 
+- How far back in analysis pipeline can we go back before results are not reproducible
+	-> Make as much reproducible analysis before irreproducible ones.
+	-> Make entire pipeline as reproducible as possible
+
+----------------------------------------------------------------

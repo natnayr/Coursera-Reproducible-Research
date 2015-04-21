@@ -1,0 +1,47 @@
+Evidence-Based Data Analysis
+
+Replication Summary
+- Focus on validity of scientific claim
+- Is this claim true?
+- The ultimate standard for strengtening scientific evidence
+- New investigators, data, analytical methods, labs, instruments
+- Particularly important in studies that impact broad policy or regulatory decisions
+
+------------------------------------------------------------------------
+
+Reproducibility Summary
+- Focus on validility of data analysis
+- Can we trust this analysis?
+- Argueably a minimum standard for scientific study
+- New investigators, same data, same methods
+- Important when replication is impossible for one-off data (e.g. polution index)
+
+------------------------------------------------------------------------
+
+Background and Underlying Treads
+
+- Studies cannot be replicated, no time or money
+- Technology is increasing data collection, BIG DATA
+- Existing databases can be merged to become bigger databases
+- Computing power allows more sophisticated analysis, even on "small" data
+- For every field "X" there is a "Computational X"
+
+------------------------------------------------------------------------
+
+The Results?
+- Basic analysis are difficult to describe
+- Heavy computational requirements are made on people without training in
+stats or computing
+- Error are easily introduced
+- Knowledge transfer is inhibited
+- Results are difficult to replicate or reproduce
+- Complicated analyses cannot be trusted.
+
+------------------------------------------------------------------------
+
+What is Reproducible Research?
+- Author, Scientific Questions -> Protocol -> Nature -> Measure
+Followed to Domain of Analytic Data -> Computational Results
+	-> Figures, Tablets, Numerical Summaries
+
+	-> Published Article -> Text
