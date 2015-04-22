@@ -78,6 +78,14 @@ Evidence-based Data Analysis
 - Apply throughly studied (via statistical research), mutually agreed upon methods to analyze data whenever possible
 - Evidence to justify application of given methods.
 
+------------------------------------------------------------------------
 
+Why?
+- Create analytic pipelines for evidence-based components - standardize it
+- Deterministic Statistical Machine
+- Evidence based analytic pipeline is established, should not mess with process
+- Analysis with transparent box
+- Reduce "researchers degrees of freedom"
+- establishes pre-specified clinical trial protocol (in biostatistics field)
 
 
