@@ -40,8 +40,44 @@ stats or computing
 ------------------------------------------------------------------------
 
 What is Reproducible Research?
+
+In Replication:
 - Author, Scientific Questions -> Protocol -> Nature -> Measure
 Followed to Domain of Analytic Data -> Computational Results
 	-> Figures, Tablets, Numerical Summaries
-
 	-> Published Article -> Text
+
+However in Reproducible Research, not all resources are not avalible:
+- Measured Data -> Analytic Data -> Computational Results
+
+- Transparency
+- Data Avalibility
+- Software / Methods Avalibility
+- Improve Transfer of Knowledge
+
+What we do not get:
+- Validity / Correctness of analysis
+
+What could go wrong?
+- Reproducible but still wrong
+- "can we trust this analysis??"
+- Premise that the data/code avalible, people can check each other and the entire system is self-correcting
+- Post-publication checking is important
+- Assumes everyone plays by the same rules and wants to achieve the same goals (i.e. scientific discovery)
+
+------------------------------------------------------------------------
+
+Analogy
+- Reproducibility lies in the area of downstream area
+
+------------------------------------------------------------------------
+
+Evidence-based Data Analysis
+- Lots of tools and methods to apply
+- Methods are standard enough to given field
+- Apply throughly studied (via statistical research), mutually agreed upon methods to analyze data whenever possible
+- Evidence to justify application of given methods.
+
+
+
+
